@@ -8,8 +8,8 @@ function validateForm() {
   const fields = [
     { selector: '.row:nth-child(1)', regex: /^[A-ZŻŹĆĄŚĘŁÓŃ][a-zżźćńółęąś]{2,19}$/ },
     { selector: '.row:nth-child(2)', regex: /^[A-ZŻŹĆĄŚĘŁÓŃ][a-zżźćńółęąś]{1,34}(-[A-ZŻŹĆĄŚĘŁÓŃ][a-zżźćńółęąś]{1,34})?$/ },
-    { selector: '.row:nth-child(3)', regex: /^[A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*(?:-[A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*)*(?: [A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*(?:-[A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*)*)*$/ },
-    { selector: '.row:nth-child(4)', regex: /^[A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*(?:-[A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*)*(?: [A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*(?:-[A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*)*)*$/ },
+    { selector: '.row:nth-child(3)', regex: /^[A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*(-[A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*)*( [A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*(-[A-ZŻŹĆĄŚĘŁÓŃ\d][a-zzżźćńółęąś\d]*)*)*$/ },
+    { selector: '.row:nth-child(4)', regex: /^[A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*(-[A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*)*( [A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*(-[A-ZŻŹĆĄŚĘŁÓŃ][a-zzżźćńółęąś]*)*)*$/ },
     { selector: '.row:nth-child(5)', regex: /^\d{1,4}[a-zA-Z]?$/ },
     { selector: '.row:nth-child(6)', regex: /^\d{1,4}[a-zA-Z]?$/ },
     { selector: '.row:nth-child(7)', regex: /^\d{3}-\d{3}-\d{3}$/ },
