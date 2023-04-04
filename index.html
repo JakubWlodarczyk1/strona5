@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form onsubmit="return validateForm()">
+
+      <div class="row">
+        <label>Imię:</label>
+        <input type="text" placeholder="Janusz"><br><br>
+        <p id="s1">Niepoprawny format imienia. Wprowadź imię od 3 do 20 znaków składające się z samych cyfr. Przykład: "Marcin"</p>
+      </div>
+
+      <div class="row">
+        <label>Nazwisko:</label>
+        <input type="text" placeholder="Ziobro"><br><br>
+        <p>Niepoprawny format nazwiska. Wprowadź nazwisko od 2 do 35 znaków składające się z samych cyfr, jeśli nazwisko dwuczłonowe dodaj '-' między członami. Przykłady: "Dzban-dzban", "Dzban"</p>
+      </div>
+
+      <div class="row">
+        <label>Ulica:</label>
+        <input type="text" placeholder="Złota"><br><br>
+        <p>Niepoprawny format ulicy. Wprowadź ulice od 2 do 30 znaków składające się z cyfr lub liczb z możliwością wystąpienia '-'. Przykłady: "Marii Skłodowskiej-Curie", "Portowa", "1000-lecia"</p>
+      </div>
+
+      <div class="row">
+        <label>Miasto:</label>
+        <input type="text" placeholder="Warszawa"><br><br>
+        <p>Niepoprawny format miasta. Wprowadź nazwisko od 2 do 30 znaków składające się z samych cyfr z możliwością wystąpienia '-'. Przykłady: "Bielsko-Biała", "Opoczno"</p>
+      </div>
+
+      <div class="row">
+        <label>Numer domu:</label>
+        <input type="text" placeholder="50"><br><br>
+        <p>Niepoprawny format numeru domu. Wprowadź numer domu od 1 do 5 znaków składające się z max 4 liczb i 1 cyfry, cyfry poprzedzają litere. Przykłady: "12", "12a"</p>
+      </div>
+
+      <div class="row">
+        <label>Numer mieszkania:</label>
+        <input type="text" placeholder="23"><br><br>
+        <p>Niepoprawny format numeru mieszkania. Wprowadź numer mieszkania od 1 do 5 znaków składające się z max 4 liczb i 1 cyfry, cyfry poprzedzają litere. Przykłady: "12", "12a"</p>
+      </div>
+
+      <div class="row">
+        <label>Numer telefonu:</label>
+        <input type="tel" placeholder="Format: '000-000-000'"><br><br>
+        <p>Niepoprawny format numeru telefonu. Wprowadź numer w formacie '000-000-000'. Przykład: '699-699-699'</p>
+      </div>
+
+      <div class="row">
+        <label>PESEL:</label>
+        <input type="text" placeholder="12345678901"><br><br>
+        <p>Niepoprawny format numeru PESEL. Wprowadź pesel składający się z 11 samych cyfr. Przykład: "12345678901"</p>
+      </div>
+
+      <div class="row">
+        <label>Kod pocztowy:</label>
+        <input type="text" placeholder="Format: '00-000'"><br><br>
+        <p>Niepoprawny format kodu pocztowego. Wprowadź kod pocztowy w formacie '00-000'. Przykład: '26-300'</p>
+      </div>
+
+      <div class="row">
+        <label>Data urodzenia:</label>
+        <input type="date" id="date" min="1900-01-01" max="datetime.now()"><br><br>
+        <p>Data urodzenia musi być wybrana</p>
+      </div>
+
+      <div class="row">
+        <label>Prawo jazdy:</label>
+        <input type="checkbox"><br><br>
+      </div>
+
+      <div class="row">
+        <label>Płeć:</label><br>
+        <input type="radio" name="sex" id="male">
+        <label class="sex">Mężczyzna</label><br>
+        <input type="radio" name="sex" id="female">
+        <label class="sex">Kobieta</label><br><br>
+        <p id="error">Płeć musi być wybrana</p>
+      </div>
+
+      <div class="row">
+        <label>Uwagi:</label><br>
+        <textarea id="comments" placeholder="Przykładowy tekst"></textarea><br><br>
+      </div>
+
+      <input type="submit" value="Wyślij">
+    </form>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>

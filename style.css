@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1800px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  width: 150px;
+}
+
+label.sex {
+  width:75px;
+}
+
+#comments {
+  min-width: 171.5px;
+  min-height: 50px;
+  max-height: 400px;
+}
+
+input[type="date"] {
+  width: 171.5px;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+.sex {
+  margin-left: 9px;
+  margin-right: 6px;
+}
+
+input[type="submit"] {
+  margin-left: 150px;
+  width: 70px;
+}
+
+p {
+  margin-left: 15px;
+  color: red;
+  visibility: hidden;
+}
+
+#error {
+  margin-left: -20px;
+}
